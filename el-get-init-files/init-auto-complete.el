@@ -1,0 +1,8 @@
+(require 'auto-complete-config)
+(ac-config-default)
+(global-auto-complete-mode t)
+(add-to-list 'ac-sources 'ac-source-words-in-buffer)
+;(set-face-background 'ac-candidate-face "#103184")
+(set-face-background 'ac-candidate-face "#DDDDDD")
+(set-face-underline 'ac-candidate-face "#103184")
+(set-face-background 'ac-selection-face "#880315")

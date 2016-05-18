@@ -1,0 +1,12 @@
+*.elc
+.*.swp
+*.pyc
+.git
+.hg
+.svn
+.python-environments
+auto-save-list
+ac-comphist.dat
+.emacs.desktop
+semanticdb/
+xx.gitxx

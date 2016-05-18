@@ -1,0 +1,183 @@
+jjjjjj;;; .loaddefs.el --- automatically extracted autoloads
+;;
+;;; Code:
+
+
+;;;### (autoloads (global-auto-complete-mode auto-complete-mode auto-complete)
+;;;;;;  "auto-complete" "auto-complete/auto-complete.el" (21261 50252))
+;;; Generated autoloads from auto-complete/auto-complete.el
+
+(autoload 'auto-complete "auto-complete" "\
+Start auto-completion at current point.
+
+\(fn &optional SOURCES)" t nil)
+
+(autoload 'auto-complete-mode "auto-complete" "\
+AutoComplete mode
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-auto-complete-mode nil "\
+Non-nil if Global-Auto-Complete mode is enabled.
+See the command `global-auto-complete-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-auto-complete-mode'.")
+
+(custom-autoload 'global-auto-complete-mode "auto-complete" nil)
+
+(autoload 'global-auto-complete-mode "auto-complete" "\
+Toggle Auto-Complete mode in every possible buffer.
+With prefix ARG, turn Global-Auto-Complete mode on if and only if
+ARG is positive.
+Auto-Complete mode is enabled in all buffers where
+`auto-complete-mode-maybe' would do it.
+See `auto-complete-mode' for more information on Auto-Complete mode.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "cl-lib" "cl-lib/cl-lib.el" (21261 52451))
+;;; Generated autoloads from cl-lib/cl-lib.el
+ (let ((d (file-name-directory #$)))
+  (when (member d load-path)
+    (setq load-path (append (remove d load-path) (list d)))))
+
+;;;***
+
+;;;### (autoloads nil "evil-core" "evil/evil-core.el" (21260 43776))
+;;; Generated autoloads from evil/evil-core.el
+ (autoload 'evil-mode "evil" "Toggle evil in all buffers" t)
+
+;;;***
+
+;;;### (autoloads (list-packages describe-package package-initialize
+;;;;;;  package-install-file package-install-from-buffer package-install
+;;;;;;  package-enable-at-startup) "package" "package/package.el"
+;;;;;;  (21261 51739))
+;;; Generated autoloads from package/package.el
+
+(defvar package-enable-at-startup t "\
+Whether to activate installed packages when Emacs starts.
+If non-nil, packages are activated after reading the init file
+and before `after-init-hook'.  Activation is not done if
+`user-init-file' is nil (e.g. Emacs was started with \"-q\").
+
+Even if the value is nil, you can type \\[package-initialize] to
+activate the package system at any time.")
+
+(custom-autoload 'package-enable-at-startup "package" t)
+
+(autoload 'package-install "package" "\
+Install the package named NAME.
+Interactively, prompt for the package name.
+The package is found on one of the archives in `package-archives'.
+
+\(fn NAME)" t nil)
+
+(autoload 'package-install-from-buffer "package" "\
+Install a package from the current buffer.
+When called interactively, the current buffer is assumed to be a
+single .el file that follows the packaging guidelines; see info
+node `(elisp)Packaging'.
+
+When called from Lisp, PKG-INFO is a vector describing the
+information, of the type returned by `package-buffer-info'; and
+TYPE is the package type (either `single' or `tar').
+
+\(fn PKG-INFO TYPE)" t nil)
+
+(autoload 'package-install-file "package" "\
+Install a package from a file.
+The file can either be a tar file or an Emacs Lisp file.
+
+\(fn FILE)" t nil)
+
+(autoload 'package-initialize "package" "\
+Load Emacs Lisp packages, and activate them.
+The variable `package-load-list' controls which packages to load.
+If optional arg NO-ACTIVATE is non-nil, don't activate packages.
+
+\(fn &optional NO-ACTIVATE)" t nil)
+
+(autoload 'describe-package "package" "\
+Display the full documentation of PACKAGE (a symbol).
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'list-packages "package" "\
+Display a list of packages.
+Fetches the updated list of packages before displaying.
+The list is displayed in a buffer named `*Packages*'.
+
+\(fn)" t nil)
+
+(defalias 'package-list-packages 'list-packages)
+
+;;;***
+
+;;;### (autoloads (global-undo-tree-mode undo-tree-mode) "undo-tree"
+;;;;;;  "undo-tree/undo-tree.el" (21260 41913))
+;;; Generated autoloads from undo-tree/undo-tree.el
+
+(autoload 'undo-tree-mode "undo-tree" "\
+Toggle undo-tree mode.
+With no argument, this command toggles the mode.
+A positive prefix argument turns the mode on.
+A negative prefix argument turns it off.
+
+Undo-tree-mode replaces Emacs' standard undo feature with a more
+powerful yet easier to use version, that treats the undo history
+as what it is: a tree.
+
+The following keys are available in `undo-tree-mode':
+
+  \\{undo-tree-map}
+
+Within the undo-tree visualizer, the following keys are available:
+
+  \\{undo-tree-visualizer-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-undo-tree-mode nil "\
+Non-nil if Global-Undo-Tree mode is enabled.
+See the command `global-undo-tree-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-undo-tree-mode'.")
+
+(custom-autoload 'global-undo-tree-mode "undo-tree" nil)
+
+(autoload 'global-undo-tree-mode "undo-tree" "\
+Toggle Undo-Tree mode in every possible buffer.
+With prefix ARG, turn Global-Undo-Tree mode on if and only if
+ARG is positive.
+Undo-Tree mode is enabled in all buffers where
+`turn-on-undo-tree-mode' would do it.
+See `undo-tree-mode' for more information on Undo-Tree mode.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("auto-complete/auto-complete-config.el"
+;;;;;;  "auto-complete/auto-complete-pkg.el" "cl-lib/cl-lib-autoloads.el"
+;;;;;;  "cl-lib/cl-lib-pkg.el" "evil/evil-commands.el" "evil/evil-common.el"
+;;;;;;  "evil/evil-digraphs.el" "evil/evil-ex.el" "evil/evil-integration.el"
+;;;;;;  "evil/evil-macros.el" "evil/evil-maps.el" "evil/evil-pkg.el"
+;;;;;;  "evil/evil-repeat.el" "evil/evil-search.el" "evil/evil-states.el"
+;;;;;;  "evil/evil-tests.el" "evil/evil-types.el" "evil/evil-vars.el"
+;;;;;;  "evil/evil.el" "fuzzy/fuzzy.el" "popup/popup.el") (21261
+;;;;;;  52468 258552))
+
+;;;***
+
+(provide '.loaddefs)
+;; Local Variables:
+;; version-control: never
+;; no-update-autoloads: t
+;; coding: utf-8
+;; End:
+;;; .loaddefs.el ends here

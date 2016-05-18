@@ -1,0 +1,11 @@
+(setq solarized-termcolors 256)
+;;solarized-termcolors =   16    |   256
+;;solarized-degrade    =   nil   |   t
+;;solarized-bold       =   t     |   nil
+;;solarized-underline  =   t     |   nil
+;;solarized-italic     =   t     |   nil
+;;solarized-contrast   =   normal|   high, low
+;;solarized-visibility =   normal|   high, low
+;;solarized-broken-srgb=   nil   |   t (see details for Mac behavior))
+(load-theme 'solarized-dark t)
+

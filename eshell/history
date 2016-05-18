@@ -1,0 +1,94 @@
+ls
+ls
+ls
+ls
+ls
+cd
+ls
+Ubuntu\ One/
+elfedit 
+elp
+elpy
+go
+cd ..
+ls
+go
+cd go
+ls
+ls
+
+ls
+np
+cd
+. ~/.profile
+
+ls
+np
+alias np='cd ~/src/repo/projects/new_plat'
+np
+la
+lb=
+rsc=
+source ./.profile
+ls
+init-evil.el
+alias np='cd ~/src/repo/projects/new_plat'
+ls
+exit
+ls
+Ubuntu\ One/
+ls
+ls
+ls
+cat bashrc 
+ls
+ch
+ls
+ls
+emacs bashrc 
+eshell
+(eshell)
+cmd
+ls
+ls
+. ~/.profile
+ls
+np
+ls
+ls
+grep -inr ftp ./
+ls
+exit
+ls
+e bashrc
+ls
+cat profile 
+ls
+find ./ -name pro*
+grep -inr ftp ./
+alias
+sh
+sh
+ls
+ls
+e
+edit
+edit --help
+rc
+profile
+find-file chnl_data_pool.c
+ls
+alias ff "find-file $1"
+ff b64.c
+alias
+alias ff 'find-file $1'
+alias
+ff b64.c
+ff des.c 
+ff entry.c 
+ff net.sh 
+
+ff net.sh
+
+ff net.sh 
+ls

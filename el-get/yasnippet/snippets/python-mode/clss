@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: clss
+# key: clss
+# group: object oriented
+# --
+class ${1:class}${2:(object)}:
+
+    def __init__(self${3: ,args}):
+        $0
+

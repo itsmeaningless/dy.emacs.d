@@ -1,0 +1,10 @@
+;;; Automatically generated on Sun Mar  9 12:52:21 2014
+;;; Invoked by dengyu@Canvas-dy using 24.3.1
+(setq-default session-file-alist '(("~/.emacs" 1 nil 1 nil nil 1483 (overwrite-mode))))
+(setq-default file-name-history '("~/.emacs.d/el-get-init-files/init-evil.el" "~/.emacs"))
+(setq-default command-history '((execute-extended-command nil "") (customize-group "session") (execute-extended-command nil "customize-group")))
+(setq-default evil-ex-history '(#("q" 0 1 (ex-index 1))))
+(setq-default extended-command-history '("customize-group"))
+(setq-default minibuffer-history '("session"))
+(setq-default occur-collect-regexp-history '("\\1"))
+(setq-default yes-or-no-p-history '("yes"))
