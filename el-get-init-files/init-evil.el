@@ -138,12 +138,10 @@
 
 (define-key evil-motion-state-map (kbd "f") 
   (evil-define-motion evil-select-buffer (cnt) 
-    (forward-char)
     (buffer-menu-select)))
 
 (define-key evil-motion-state-map (kbd "F") 
   (evil-define-motion evil-select-buffer-all (cnt) 
-    (forward-char)
     (buffer-menu-select-all)))
 
 (evil-define-motion evil-switch-buffer (cnt) 
