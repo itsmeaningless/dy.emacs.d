@@ -43,6 +43,8 @@
  (jedi status "installed" recipe
        (:name jedi :description "An awesome Python auto-completion for Emacs" :type github :pkgname "tkf/emacs-jedi" :submodule nil :depends
               (epc auto-complete python-environment)))
+ (jinja2-mode status "installed" recipe
+              (:name jinja2-mode :description "Jinja2 mode for emacs" :website "http://paradoxxxzero.github.com/jinja2-mode/" :type github :pkgname "paradoxxxzero/jinja2-mode"))
  (js2-mode status "installed" recipe
            (:name js2-mode :website "https://github.com/mooz/js2-mode#readme" :description "An improved JavaScript editing mode" :type github :pkgname "mooz/js2-mode" :prepare
                   (autoload 'js2-mode "js2-mode" nil t)))

@@ -450,6 +450,19 @@ Blocking version `jedi:install-server'.
 
 ;;;***
 
+;;;### (autoloads nil "jinja2-mode/jinja2-mode" "jinja2-mode/jinja2-mode.el"
+;;;;;;  (22329 46274 0 0))
+;;; Generated autoloads from jinja2-mode/jinja2-mode.el
+
+(autoload 'jinja2-mode "jinja2-mode/jinja2-mode" "\
+Major mode for editing jinja2 files
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.jinja2\\'" . jinja2-mode))
+
+;;;***
+
 ;;;### (autoloads nil "js2-mode/js2-imenu-extras" "js2-mode/js2-imenu-extras.el"
 ;;;;;;  (22328 53172 0 0))
 ;;; Generated autoloads from js2-mode/js2-imenu-extras.el
@@ -727,10 +740,10 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "evil/evil-maps.el" "evil/evil-pkg.el" "evil/evil-repeat.el"
 ;;;;;;  "evil/evil-search.el" "evil/evil-states.el" "evil/evil-tests.el"
 ;;;;;;  "evil/evil-types.el" "evil/evil-vars.el" "evil/evil.el" "fuzzy/fuzzy.el"
-;;;;;;  "jedi/tryout-jedi.el" "js2-mode/js2-old-indent.el" "python-environment/python-environment.el"
-;;;;;;  "python-environment/test-python-environment.el" "rainbow-mode/rainbow-mode-autoloads.el"
-;;;;;;  "rainbow-mode/rainbow-mode-pkg.el" "yasnippet/yasnippet-debug.el"
-;;;;;;  "yasnippet/yasnippet-tests.el") (22328 53174 430587 0))
+;;;;;;  "jedi/tryout-jedi.el" "js2-mode/js2-old-indent.el" "python-environment/test-python-environment.el"
+;;;;;;  "rainbow-mode/rainbow-mode-autoloads.el" "rainbow-mode/rainbow-mode-pkg.el"
+;;;;;;  "yasnippet/yasnippet-debug.el" "yasnippet/yasnippet-tests.el")
+;;;;;;  (22329 46274 498877 0))
 
 ;;;***
 
