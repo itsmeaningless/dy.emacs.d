@@ -10,3 +10,5 @@ ac-comphist.dat
 .emacs.desktop
 semanticdb/
 xx.gitxx
+.project-roots*
+.emacs.desktop.lock
