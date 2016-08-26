@@ -450,8 +450,8 @@ Blocking version `jedi:install-server'.
 
 ;;;***
 
-;;;### (autoloads nil "jinja2-mode/jinja2-mode" "jinja2-mode/jinja2-mode.el"
-;;;;;;  (22329 46274 0 0))
+;;;### (autoloads (jinja2-mode) "jinja2-mode/jinja2-mode" "jinja2-mode/jinja2-mode.el"
+;;;;;;  (22334 26308 173381 250000))
 ;;; Generated autoloads from jinja2-mode/jinja2-mode.el
 
 (autoload 'jinja2-mode "jinja2-mode/jinja2-mode" "\
@@ -743,7 +743,7 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "jedi/tryout-jedi.el" "js2-mode/js2-old-indent.el" "python-environment/test-python-environment.el"
 ;;;;;;  "rainbow-mode/rainbow-mode-autoloads.el" "rainbow-mode/rainbow-mode-pkg.el"
 ;;;;;;  "yasnippet/yasnippet-debug.el" "yasnippet/yasnippet-tests.el")
-;;;;;;  (22329 46274 498877 0))
+;;;;;;  (22334 30366 90908 721000))
 
 ;;;***
 

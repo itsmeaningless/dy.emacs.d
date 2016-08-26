@@ -12,7 +12,7 @@
          :exclude-paths ("media" "contrib" "*/node_modules")
          )
         ("Django project"
-         :root-contains-files ("xxxmanage.py")
+         :root-contains-files ("manage.py")
          :filename-regex ,(regexify-ext-list '(py html css js htm less el jade scss))
          :exclude-paths ("media" "contrib" "*/node_modules"))
         ("Firefox addon project"
