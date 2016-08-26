@@ -21,6 +21,8 @@
    * `Repository <https://github.com/tkf/emacs-jedi>`_ (at GitHub)
    * `Issue tracker <https://github.com/tkf/emacs-jedi/issues>`_ (at GitHub)
    * `Travis CI <https://travis-ci.org/tkf/emacs-jedi>`_ |build-status|
+   * `MELPA <https://melpa.org/#/jedi-jedi>`_ |melpa-badge|
+   * `MELPA Stable <https://stable.melpa.org/#/jedi>`_ |melpa-stable-badge|
 
 
 What is it?
@@ -44,8 +46,25 @@ the `released version <http://tkf.github.io/emacs-jedi/released>`_.
    See more screenshots
    `here <http://tkf.github.io/emacs-jedi/latest#screenshots>`_.
 
+Company Users
+=============
+
+**NOTE: Please do not install 'jedi' package for company users. You should install only company-jedi.**
+
+If you use `company <https://github.com/company-mode/company-mode>`_,
+please see `company-jedi <https://github.com/syohex/emacs-company-jedi>`_.
+
+
 .. Build status badge
 .. |build-status|
    image:: https://secure.travis-ci.org/tkf/emacs-jedi.png?branch=master
    :target: http://travis-ci.org/tkf/emacs-jedi
    :alt: Build Status
+.. |melpa-badge|
+   image:: http://melpa.org/packages/jedi-badge.svg
+   :target: http://melpa.org/#/jedi
+   :alt: MELPA Badge
+.. |melpa-stable-badge|
+   image:: http://stable.melpa.org/packages/jedi-badge.svg
+   :target: http://stable.melpa.org/#/jedi
+   :alt: MELPA Stable Badge

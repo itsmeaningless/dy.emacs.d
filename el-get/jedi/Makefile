@@ -13,8 +13,8 @@ export EMACS ?= emacs
 
 BINDIR ?= bin
 
-ELPA_DIR = \
-	.cask/$(shell ${EMACS} -Q --batch --eval '(princ emacs-version)')/elpa
+ELPA_DIR = $(shell EMACS=$(EMACS) $(CASK) package-directory)
+
 # See: cask-elpa-dir
 
 VIRTUAL_EMACS = ${CASK} exec ${EMACS} -Q \
@@ -73,7 +73,7 @@ install-jedi-dev:
 
 env: $(ENV)/$(BINDIR)/jediepcserver
 $(ENV)/$(BINDIR)/jediepcserver: ${ELPA_DIR} jediepcserver.py setup.py
-	${VIRTUAL_EMACS} -batch -l jedi.el -f "jedi:install-server-block"
+	${VIRTUAL_EMACS} -batch -L . -l jedi.el -f "jedi:install-server-block"
 	test -f $@
 
 clean-env:
@@ -86,8 +86,8 @@ clean: clean-env clean-el
 print-deps: elpa env
 	@echo "----------------------- Dependencies -----------------------"
 	$(EMACS) --version
-	${VIRTUAL_EMACS} -batch -l jedi.el -f jedi:print-jedi-version
-	ls -d $(ENV)/*/python*/site-packages/*egg-info
+	${VIRTUAL_EMACS} -batch -L . -l jedi.el -f jedi:print-jedi-version
+	-ls -d $(ENV)/*/python*/site-packages/*egg-info
 	@echo "------------------------------------------------------------"
 
 before-test: ${TEST_DEPS}

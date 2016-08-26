@@ -337,30 +337,9 @@ a vertical bar corresponding to the indentation of the current line
 
 ;;;***
 
-;;;### (autoloads (jedi:install-server-block jedi:install-server
-;;;;;;  jedi:setup anything-jedi-related-names helm-jedi-related-names
-;;;;;;  jedi:ac-setup jedi:complete jedi:start-dedicated-server)
-;;;;;;  "jedi/jedi" "jedi/jedi.el" (21311 49869 940360 982000))
+;;;### (autoloads (jedi:auto-complete-mode jedi:complete jedi:ac-setup)
+;;;;;;  "jedi/jedi" "jedi/jedi.el" (22463 57891 839777 248000))
 ;;; Generated autoloads from jedi/jedi.el
-
-(autoload 'jedi:start-dedicated-server "jedi/jedi" "\
-Start Jedi server dedicated to this buffer.
-This is useful, for example, when you want to use different
-`sys.path' for some buffer.  When invoked as an interactive
-command, it asks you how to start the Jedi server.  You can edit
-the command in minibuffer to specify the way Jedi server run.
-
-If you want to setup how Jedi server is started programmatically
-per-buffer/per-project basis, make `jedi:server-command' and
-`jedi:server-args' buffer local and set it in `python-mode-hook'.
-See also: `jedi:server-args'.
-
-\(fn COMMAND)" t nil)
-
-(autoload 'jedi:complete "jedi/jedi" "\
-Complete code at point.
-
-\(fn &key (expand ac-expand-on-auto-complete))" t nil)
 
 (autoload 'jedi:ac-setup "jedi/jedi" "\
 Add Jedi AC sources to `ac-sources'.
@@ -376,19 +355,53 @@ in their Emacs configuration.
 
 \(fn)" t nil)
 
-(autoload 'helm-jedi-related-names "jedi/jedi" "\
+(autoload 'jedi:complete "jedi/jedi" "\
+Complete code at point.
+
+\(fn &key (expand ac-expand-on-auto-complete))" t nil)
+
+(autoload 'jedi:auto-complete-mode "jedi/jedi" "\
+
+
+\(fn)" nil nil)
+
+(setq jedi:setup-function #'jedi:ac-setup jedi:mode-function #'jedi:auto-complete-mode)
+
+;;;***
+
+;;;### (autoloads (jedi:install-server-block jedi:install-server
+;;;;;;  jedi:setup anything-jedi-related-names helm-jedi-related-names
+;;;;;;  jedi:start-dedicated-server) "jedi/jedi-core" "jedi/jedi-core.el"
+;;;;;;  (22463 57891 839777 248000))
+;;; Generated autoloads from jedi/jedi-core.el
+
+(autoload 'jedi:start-dedicated-server "jedi/jedi-core" "\
+Start Jedi server dedicated to this buffer.
+This is useful, for example, when you want to use different
+`sys.path' for some buffer.  When invoked as an interactive
+command, it asks you how to start the Jedi server.  You can edit
+the command in minibuffer to specify the way Jedi server run.
+
+If you want to setup how Jedi server is started programmatically
+per-buffer/per-project basis, make `jedi:server-command' and
+`jedi:server-args' buffer local and set it in `python-mode-hook'.
+See also: `jedi:server-args'.
+
+\(fn COMMAND)" t nil)
+
+(autoload 'helm-jedi-related-names "jedi/jedi-core" "\
 Find related names of the object at point using `helm' interface.
 
 \(fn)" t nil)
 
-(autoload 'anything-jedi-related-names "jedi/jedi" "\
+(autoload 'anything-jedi-related-names "jedi/jedi-core" "\
 Find related names of the object at point using `anything' interface.
 
 \(fn)" t nil)
 
-(autoload 'jedi:setup "jedi/jedi" "\
+(autoload 'jedi:setup "jedi/jedi-core" "\
 Fully setup jedi.el for current buffer.
-It setups `ac-sources' (calls `jedi:ac-setup') and turns
+It setups `ac-sources' or `company-backends' and turns
 `jedi-mode' on.
 
 This function is intended to be called from `python-mode-hook',
@@ -401,7 +414,7 @@ what jedi can do.
 
 \(fn)" t nil)
 
-(autoload 'jedi:install-server "jedi/jedi" "\
+(autoload 'jedi:install-server "jedi/jedi-core" "\
 This command installs Jedi server script jediepcserver.py in a
 Python environment dedicated to Emacs.  By default, the
 environment is at ``~/.emacs.d/.python-environments/default/``.
@@ -443,7 +456,7 @@ See also:
 
 \(fn)" t nil)
 
-(autoload 'jedi:install-server-block "jedi/jedi" "\
+(autoload 'jedi:install-server-block "jedi/jedi-core" "\
 Blocking version `jedi:install-server'.
 
 \(fn)" nil nil)
@@ -740,10 +753,10 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "evil/evil-maps.el" "evil/evil-pkg.el" "evil/evil-repeat.el"
 ;;;;;;  "evil/evil-search.el" "evil/evil-states.el" "evil/evil-tests.el"
 ;;;;;;  "evil/evil-types.el" "evil/evil-vars.el" "evil/evil.el" "fuzzy/fuzzy.el"
-;;;;;;  "jedi/tryout-jedi.el" "js2-mode/js2-old-indent.el" "python-environment/test-python-environment.el"
+;;;;;;  "jedi/test-jedi.el" "jedi/tryout-jedi.el" "js2-mode/js2-old-indent.el"
 ;;;;;;  "rainbow-mode/rainbow-mode-autoloads.el" "rainbow-mode/rainbow-mode-pkg.el"
 ;;;;;;  "yasnippet/yasnippet-debug.el" "yasnippet/yasnippet-tests.el")
-;;;;;;  (22334 30366 90908 721000))
+;;;;;;  (22463 57892 262008 746000))
 
 ;;;***
 

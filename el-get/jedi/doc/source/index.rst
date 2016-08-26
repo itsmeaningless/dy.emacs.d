@@ -96,17 +96,17 @@ Emacs
 -----
 - EPC_
 - deferred.el_ (> v0.3)
-- auto-complete_
+- auto-complete_ or company-mode_
 - python-environment.el_
 
-If your completion popup is broken when width of completion candidates
-is wide, try the newest version of popup.el_.
+For auto-complete_ users, if your completion popup is broken when width of completion
+candidates is wide, try the newest version of popup.el_.
 
 .. _deferred.el: https://github.com/kiwanami/emacs-deferred
 .. _popup.el: https://github.com/auto-complete/popup-el
 .. _python-environment.el: https://github.com/tkf/emacs-python-environment
 
-Jedi.el is currently tested against Emacs 24.3-devel, 24.2 and 23.1.
+Jedi.el is currently tested against Emacs 24.3-devel, 24.2
 
 Command line program
 --------------------
@@ -121,7 +121,7 @@ Python
 - python-epc_
 - argparse (for Python 2.6)
 
-Jedi.el is tested against Python 2.6, 2.7, 3.2 and 3.3.
+Jedi.el is tested against Python 2.6, 2.7, 3.2 and 3.3, 3.4.
 
 
 Install
@@ -159,7 +159,8 @@ You need to add Marmalade_ or MELPA_ to :el:symbol:`package-archives`.
 After you setup :el:symbol:`package-archives` properly, Jedi.el can be
 installed by these Emacs command:
 
-- ``M-x package-install RET jedi RET``
+- (auto-complete)``M-x package-install RET jedi RET``
+- (company-mode)``M-x package-install RET company-jedi RET``
 - ``M-x jedi:install-server RET`` (see also :ref:`pyinstall`)
 
 Here is a minimal example to setup Jedi.el via package.el + MELPA:
@@ -179,12 +180,12 @@ Here is a minimal example to setup Jedi.el via package.el + MELPA:
 See also: :ref:`minimal-tryout`.
 
 .. _Marmalade: http://marmalade-repo.org
-.. _MELPA: http://melpa.milkbox.net
+.. _MELPA: http://melpa.org
 
 Manual install
 --------------
 
-1. Install EPC_ and auto-complete_.
+1. Install EPC_ and (auto-complete_ or company-mode_).
 2. Install Jedi.el.  Download the repository of Jedi.el and add it to
    `load-path`.
 3. Add ``(autoload 'jedi:setup "jedi" nil t)`` in your Emacs configuration.
@@ -266,6 +267,7 @@ Jedi.el and EIN simultaneously.
 .. _Python binding: python-epc_
 .. _python-epc: https://github.com/tkf/python-epc
 .. _auto-complete: https://github.com/auto-complete/auto-complete
+.. _company-mode: https://github.com/company-mode/company-mode
 .. _jedi-direx: https://github.com/tkf/emacs-jedi-direx
 
 .. Build status badge
