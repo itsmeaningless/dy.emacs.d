@@ -7,7 +7,7 @@
         ("Project"
          ;:root-contains-files (".gitmodules" ".git")
          :root-contains-files (".git")
-         :filename-regex ".*\\.\\(java\\|c\\|h\\|cpp\\|lua\\|C\\|lua\\|ec\\|sh\\|py\\|html\\|htm\\|js\\|css\\|less\\|jade\\|jsx\\|scss\\)\\|.*akefile.*\\|.*note.*" 
+         :filename-regex ".*\\.\\(java\\|c\\|h\\|cpp\\|lua\\|C\\|lua\\|ec\\|sh\\|py\\|html\\|htm\\|js\\|css\\|json\\|less\\|jade\\|jsx\\|scss\\)\\|.*akefile.*\\|.*note.*" 
          ;:on-hit (lambda (p) (message (car p)))
          :exclude-paths ("media" "contrib" "*/node_modules")
          )
